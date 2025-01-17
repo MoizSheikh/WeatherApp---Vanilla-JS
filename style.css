@@ -1,31 +1,31 @@
-*{
-    padding: 0px;
-    margin: 0px;
+* {
+  padding: 0px;
+  margin: 0px;
 }
 
-nav{
-    background-color: blue;
-    text-align: center;
-    /* height: 90px; */
-    padding: 20px 0px;
-    font: 2rem sans-serif;
-    font-weight: bolder;
+nav {
+  background-color: blue;
+  text-align: center;
+  /* height: 90px; */
+  padding: 20px 0px;
+  font: 2rem sans-serif;
+  font-weight: bolder;
 }
 
-.eachDayCard{
-    background-color: rgb(15, 187, 255);
-    margin: 5px 10px;
-    padding: 20px;
+.eachDayCard {
+  background-color: rgb(15, 187, 255);
+  margin: 5px 10px;
+  padding: 20px;
 }
 
-.cityBtn{
-    width: 90%;
+.cityBtn {
+  width: 90%;
 }
 
-#days:nth-child(-n+5) {
-    display: none
+#days:nth-child(-n + 5) {
+  display: none;
 }
 
-.eachDayCard:nth-child(n+6) {
-    display: none;   ;
+.eachDayCard:nth-child(n + 6) {
+  display: none;
 }

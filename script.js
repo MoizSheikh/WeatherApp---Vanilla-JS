@@ -115,7 +115,7 @@ searchBtn.addEventListener("click", (e) => {
 
 function cityBtns() {
   searchResults.innerHTML = "";
-  for (var i = 0; i < cityNames.length; i++) {
+  for (let i = 0; i < cityNames.length; i++) {
     let newCityBtn = document.createElement("button");
     newCityBtn.setAttribute("type", "button");
     newCityBtn.setAttribute("class", "btn btn-primary m-1 cityBtn");
