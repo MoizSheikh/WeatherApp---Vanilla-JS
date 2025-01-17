@@ -37,16 +37,15 @@ searchBtn.addEventListener("click", (e) => {
       return response.json();
     })
     .then((data) => {
-      let lat = data.coord.lat;
-      let lon = data.coord.lon;
-      temp = data.main.temp;
-      temp = (temp - 273.15).toFixed(1);
-      wind = data.wind.speed;
-      humidity = data.main.humidity;
-      let dt = data.dt * 1000;
+      const lat = data.coord.lat;
+      const lon = data.coord.lon;
+      const temp = (data.main.temp - 273.15).toFixed(1);
+      const wind = data.wind.speed;
+      const humidity = data.main.humidity;
+      const dt = data.dt * 1000;
       let date = new Date(dt);
       const dayDate = date.toDateString();
-      day = dayDate.slice(0, 3);
+      const day = dayDate.slice(0, 3);
       date = date.toLocaleString().slice(0, 10);
 
       cityWeather.innerText = `${cityName}  ${date} ${day}`;
@@ -61,7 +60,7 @@ searchBtn.addEventListener("click", (e) => {
           return response.json();
         })
         .then((data) => {
-          let uvi = data.value;
+          const uvi = data.value;
 
           UVIndexWeather.innerText = `UVI: ${uvi}`;
 
